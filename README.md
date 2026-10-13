@@ -1,5 +1,12 @@
 # Resume–Job Matching Engine
 
+## Overview
+
+A machine learning exercise that ranks a small job catalog against a resume by the Jaccard overlap of their word tokens. `POST /match` returns the jobs in ranked order, and an empty resume is refused rather than matched. A pytest suite runs in GitHub Actions to check the ranking and the refusal.
+
+- **Built with:** Python, pytest, GitHub Actions
+- **Scope:** Local laptop lab; it does not call a hosted model and does not apply production changes.
+
 <!-- project-guide:start -->
 ## Project guide
 
